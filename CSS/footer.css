@@ -1,0 +1,144 @@
+/* footer */
+footer{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    background-color: #18171c;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    place-items: center;
+    overflow: hidden;
+}
+/* nama */
+.nama{
+    display: flex;
+    position: relative;
+    width: 253px;
+    height: 45px;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+.nama h2 .bx{
+    margin: 8px 4px;
+    font-size: 37px;
+    position: absolute;
+    background: -webkit-linear-gradient(#E1306C,#f97d49, #FD1D1D);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: transparent;
+    cursor: pointer;
+}
+.nama h2{
+    font-size: 33px;
+    margin: 0;
+    position: absolute;
+}
+.nama h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(147, 148, 165);
+}
+.nama h2:nth-child(2){
+    background: -webkit-linear-gradient(#E1306C,#f97d49, #FD1D1D);
+    -webkit-text-stroke: transparent;
+    -webkit-background-clip: text;
+    animation: animasiNama 3s ease-in-out infinite;
+}
+.nama h2::before{
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #18171c 5%, #18171c 100%);
+    animation: animasiSlide1 5s infinite alternate-reverse linear;
+}
+/* sosmed */
+.sosmed{
+    font-size: 28px;
+}
+.sosmed a .bx:hover{
+    transform: scale(1.5);
+}
+.sosmed a .bxl-instagram{
+    color: white;
+    background: -webkit-linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sosmed a .bxl-steam{
+    background: -webkit-linear-gradient(#171a21, #66c0f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sosmed a .bxl-github{
+    background: -webkit-linear-gradient(#0cacf4, #1d202d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sosmed a .bxl-gmail{
+    color: #DB4437;
+    -webkit-text-stroke: 0.5px white;
+}
+.sosmed a .bxl-discord-alt{
+    color: #405DE6;
+    -webkit-text-stroke: 0.5px white;
+}
+/* copyright */
+.copyright{
+    display: flex;
+    display: flex;
+    position: relative;
+    width: 321.96px;
+    height: 25px;
+}
+.copyright h1{
+    font-size: 18px;
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.copyright h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(147, 148, 165);
+}
+.copyright h1:nth-child(2){
+    background: -webkit-linear-gradient(#E1306C,#f97d49, #FD1D1D);
+    -webkit-text-stroke: transparent;
+    -webkit-background-clip: text;
+    animation: animasi 2s ease-in-out infinite;
+}
+.copyright h1::before{
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #18171c 5%, #18171c 100%);
+    animation: animasiSlide2 5s infinite alternate-reverse linear;
+}
+/* membuat animasi untuk nama dan copyright */
+@keyframes animasiNama{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+@keyframes animasiSlide1 {
+    0%{
+        left: 120%;
+    }
+    100%{
+        left: -20%;
+    } 
+}
+@keyframes animasiSlide2 {
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 120%;
+    } 
+}

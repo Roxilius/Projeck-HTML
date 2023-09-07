@@ -1,0 +1,86 @@
+/* airing */
+.top-airing {
+    float: right;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 24%;
+    border: solid white 1px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+.airing{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.airing ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+    place-content: center;
+    padding: 2px;
+}
+.top{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #18171c;
+}
+.gambar1{
+    width: 55px;
+}
+.gambar1 a{
+    width: inherit;
+    height: inherit;
+}
+.gambar1 a img{
+    width: inherit;
+    height: inherit;
+}
+.info-anime{
+    padding: 0;
+    text-overflow: unset;
+    overflow: hidden;
+    white-space: unset;
+}
+.info-anime h4{
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4em;
+    overflow: hidden;
+}
+.info-anime h4 a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+}
+.kategori{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    align-items: center;
+}
+.kategori span{
+    display: inline-block;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 3px 5px;
+}
+.wacth-airing{
+    width: 30%;
+}

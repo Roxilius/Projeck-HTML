@@ -1,0 +1,196 @@
+/* responsive */
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+    header form{
+        width: 60%;
+    }
+    header .mode{
+        font-size: 30px;
+    }
+}
+/* Laptop */
+@media screen and (max-width: 1113px) {
+    header .mode{
+        font-size: 30px;
+    }
+    header form{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .watch{
+        width: 90%;
+    }
+    .watch .container{
+        width: 68%;
+    }
+}
+/* Tablet L&M*/
+@media screen and (max-width: 886px) {
+    header{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr;
+    }
+    header form{
+        width: 95%;
+    }
+    header .navlist li a{
+        font-size: 15px;
+        margin: 0 2px;
+    }
+    header .navlist{
+        place-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    header .mode{
+        font-size: 25px;
+    }
+    .container{
+        width: 95%;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+    }
+    .top-airing{
+        margin-top: 10px;
+        width: 100%;
+        float: right;
+    }
+    .main{
+        width: 95%;
+    }
+    .watch .container{
+        width: 100%;
+    }
+}
+/* Tablet S */
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        grid-template-columns: 0.3fr 0.3fr 2fr 0.3fr;
+        grid-template-areas: 'menu logo search mode';
+    }
+    header form{
+        width: 90%;
+    }
+    header .navlist{
+        width: 45%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'menu'
+            'home'
+            'ongoing'
+            'jadwal'
+            'movies';
+        position: absolute;
+        left: 0;
+        top: -20%;
+        background-color: #18171c;
+        z-index: 1;
+        justify-content: space-around;
+        list-style: disc;
+        color: white;
+        transform: translateX(-100%);
+    }
+    header .slide{
+        transform: translateX(0);
+    }
+    header .navlist li:nth-child(1){
+        grid-area: home;
+    }
+    header .navlist li:nth-child(2){
+        grid-area: ongoing;
+    }
+    header .navlist li:nth-child(3){
+        grid-area: jadwal;
+    }
+    header .navlist li:nth-child(4){
+        grid-area: movies;
+    }
+    header .menu{
+        display: block;
+    }
+    .main .judul{
+        font-size: 15px;
+    }
+    main .content{
+        width: 95%;
+    }
+    main .content .cards{
+        width: 120px;
+        height: 150px;
+    }
+    main .content .cards .recent-episode{
+        width: 120px;
+        height: 150px;
+    }
+    .detail{
+        width: 120px;
+    }
+    .watch .container .judul{
+        font-size: 13px;
+    }
+    .description .gambar{
+        width: 137px;
+    }
+    .genres{
+        font-size: 13px;
+    }
+}
+/* mobile L-M-S */
+@media screen and (max-width: 500px) {
+    header{
+        width: 100%;
+    }
+    header .navlist{
+        height: 100vh;
+    }
+    .opsi{
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+        z-index: 5;
+        left: 2%;
+        bottom: 5%;
+    }
+    .judul{
+        font-size: 15px;
+    }
+    footer{
+        height: 83px;
+        background-size: 73px, 49px !important;
+    }
+    .nama{
+        padding: 0;
+        width: 180px;
+        height: 47px !important;
+    }
+    footer .nama h2{
+        font-size: 23px;
+    }
+    .sosmed .bx{
+        font-size: 23px;
+    }
+    .nama h2 .bx{
+        margin: 4px 3px;
+        font-size: 27px;
+    }
+    .copyright{
+        width: 196.75px;
+    }
+    .copyright h1{
+        font-size: 11px;
+    }
+    .watch .container .judul{
+        font-size: 10px;
+    }
+    .watch .container .content{
+        padding: 0;
+        min-height: 260px;
+    }
+}

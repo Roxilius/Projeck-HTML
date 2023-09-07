@@ -1,0 +1,113 @@
+/* change mode */
+.theme{
+    background-color: #d2d3db;
+    color: black;
+}
+/* light mode header */
+.theme header{
+    background-color: #9394a5;
+}
+.theme header .menu{
+    color: black;
+}
+.theme header .navlist{
+    background-color: #9394a5;
+}
+.theme header form{
+    background-color: #9394a5;
+    border: black solid 2px;
+}
+.theme header form .keyword::placeholder{
+    color: black;
+}
+.theme header form .bx{
+    color: black;
+}
+.theme header form .keyword{
+    color: black;
+}
+.theme header .navlist li a{
+    color: black;
+}
+.theme header .navlist li a:hover{
+    transform: translateY(5px);
+    background-color: #18171c;
+    color: white;
+    transition: 0.5s;
+    border: solid #ffa62e 1px;
+}
+/* light mode footer */
+.theme footer{
+    background-color: #9394a5;
+}
+.theme .nama h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #18171c;
+}
+.theme .nama h2:nth-child(2){
+    color: #9394a5;
+    animation: animasiNama 3s ease-in-out infinite;
+}
+.theme .nama h2::before{
+    background: linear-gradient(90deg, transparent 0%, #9394a5 5%, #9394a5 100%);
+    animation: animasiSlide1 5s infinite alternate-reverse linear;
+}
+.theme .copyright h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #18171c;
+}
+.theme .copyright h1:nth-child(2){
+    color: #9394a5;
+    animation: animasiNama 2s ease-in-out infinite;
+}
+.theme .copyright h1::before{
+    background: linear-gradient(90deg, transparent 0%, #9394a5 5%, #9394a5 100%);
+    animation: animasiSlide2 5s infinite alternate-reverse linear;
+}
+.theme .sosmed a .bxl-gmail{
+    -webkit-text-stroke: 0.5px black;
+}
+.theme .sosmed a .bxl-discord-alt{
+    -webkit-text-stroke: 0.5px black;
+}
+/* light mode content */
+.theme .container .judul{
+    background-color: #9394a5;
+    color: black;
+}
+.theme .container main .judul{
+    background-color: transparent;
+}
+.theme .main .judul{
+    color: black;
+}
+.theme .top{
+    background-color: #9394a5;
+    border: #18171c solid 1px;
+}
+.theme .info-anime h4 a{
+    color: black;
+}
+.theme .top-airing{
+    color: black;
+}
+.theme .kategori span{
+    border: solid black 1px;
+}
+.theme .watch .container .info{
+    background-color: #9394a5;
+}
+.theme .deskripsi{
+    color: black;
+}
+.theme .genres{
+    color: black;
+}
+.theme .genre{
+    border: solid black 1px;
+    background-color: #9394a5;
+}
+.theme .load .more{
+    color: black;
+    background-color: #9394a5;
+}
